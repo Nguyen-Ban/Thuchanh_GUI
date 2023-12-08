@@ -1,3 +1,2 @@
 # Thuchanh_GUI
-!alt text (https://github.com/Nguyen-Ban/Thuchanh_GUI/issues)
-<img src="[http://url/to/image.png](https://github.com/Nguyen-Ban/Thuchanh_GUI/issues/1#issue-2032939520)https://github.com/Nguyen-Ban/Thuchanh_GUI/issues/1#issue-2032939520" width="50%" height="50%">
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/Nguyen-Ban/Thuchanh_GUI/issues)
