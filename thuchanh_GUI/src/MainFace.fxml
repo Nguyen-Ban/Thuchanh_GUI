@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="800.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppController">
+   <children>
+      <AnchorPane layoutX="77.0" layoutY="50.0" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #F2F2F2;" styleClass="calendar" stylesheets="@style.css" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="77.0" AnchorPane.rightAnchor="77.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <VBox prefHeight="700.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="400.0" style="-fx-background-color: #F05EF2;" styleClass="border-2top">
+                     <children>
+                        <ImageView fitHeight="98.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-male-user-48.png" />
+                           </image></ImageView>
+                        <ImageView fx:id="calling" fitHeight="39.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-call-64.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="200.0" top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="meeting" fitHeight="39.0" fitWidth="39.0" layoutX="124.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-video-call-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" top="30.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="messageBox" alignment="BOTTOM_RIGHT" prefHeight="500.0" prefWidth="400.0" spacing="5.0" style="-fx-background-color: #F2F2F2;" />
+                  <HBox prefHeight="80.0" prefWidth="400.0" style="-fx-background-color: #F05EF2;" styleClass="border-2bot">
+                     <children>
+                        <ImageView fx:id="images" fitHeight="47.0" fitWidth="47.0" onMouseClicked="#handleAddImage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-image-gallery-64.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="audio" fitHeight="41.0" fitWidth="41.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-microphone-50.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <TextField fx:id="writeMessage" prefHeight="41.0" prefWidth="246.0" promptText="Your Messeges" styleClass="text-field" stylesheets="@style.css">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin></TextField>
+                        <ImageView fx:id="send" fitHeight="47.0" fitWidth="47.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#sendMessage" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Images/icons8-sent-64.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="exit" fitHeight="48.0" fitWidth="64.0" layoutX="483.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-exit-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
