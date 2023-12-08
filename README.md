@@ -1,1 +1,1 @@
-# Thuchanh_GUIhttps:
+# Thuchanh_GUI
